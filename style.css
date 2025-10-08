@@ -1,0 +1,206 @@
+/* 🌈 Gaya Umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ✨ Animasi Masuk */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    animation: fadeIn 1s ease;
+}
+
+/* 💠 LOBY */
+.loby-container {
+    text-align: center;
+    margin-top: 10%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 50px;
+    width: 85%;
+    max-width: 600px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease;
+}
+
+.loby-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.loby-container p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.loby-buttons .btn {
+    margin: 10px;
+}
+
+/* 📦 Card efek kaca */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    width: 95%;
+    max-width: 900px;
+    margin-top: 40px;
+    animation: fadeIn 0.8s ease;
+}
+
+/* 📋 Tabel data */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease;
+}
+
+th {
+    background: linear-gradient(90deg, #007bff, #6610f2);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+}
+
+tr:hover {
+    background-color: rgba(0, 123, 255, 0.12);
+    transition: 0.3s;
+}
+
+/* 🔘 Tombol */
+a.btn, button {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+a.btn:hover, button:hover {
+    transform: scale(1.07);
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* 🔘 Tombol Warna Sekunder */
+.btn.secondary {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+}
+
+.btn.secondary:hover {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+}
+
+/* 🖊️ Tombol Edit dan Delete */
+a.edit {
+    color: #28a745;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.edit:hover {
+    text-decoration: underline;
+    color: #1e7e34;
+}
+
+a.delete {
+    color: #dc3545;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.delete:hover {
+    text-decoration: underline;
+    color: #a71d2a;
+}
+
+/* 🧾 Form input */
+form {
+    max-width: 450px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    animation: fadeIn 0.9s ease;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 10px rgba(0,123,255,0.5);
+}
+
+/* 📱 Responsive */
+@media (max-width: 700px) {
+    .loby-container {
+        margin-top: 25%;
+        padding: 30px;
+    }
+    table {
+        font-size: 13px;
+    }
+    a.btn, button {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+}
